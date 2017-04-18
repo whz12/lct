@@ -1,0 +1,269 @@
+.m-index {
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  section{
+    @include flex();
+    @include flexbox();
+    @include flex-direction(column)
+    width:100%;
+    .per-t{
+        width: 100%;
+        overflow: hidden;
+        height: 10rem;
+        position: relative;
+        img{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 10rem;
+        }
+        p{
+            width: 5rem;
+            height: 1.75rem;
+            background: #d93a1a;
+            border-radius: 0.5rem;
+            position: absolute;
+            left: 50%;
+            top: 3.5rem;
+            margin-left: -2.5rem;
+            color: #fff;
+            font-size: 0.8rem;
+            text-align: center;
+            line-height: 1.75rem;
+            a{
+              color: #fff;
+              font-size: 0.8rem;
+              text-align: center;
+              line-height: 1.75rem;
+            }
+            span{
+              padding:0 .3rem;
+            }
+        }
+    }
+    .total-order-w{
+      width: 100%;
+      height: 2.5rem;
+      @include border(0 0 1px 0,#666)
+      font-size: 0.75rem;
+      background: #fff;
+      a{
+        .my-order{
+            padding-left: 0.45rem;
+            color: #333;
+            line-height: 2.5rem;
+            float: left;
+        }
+        .icon-r{
+          background: url(http://m.lecuntao.com/resource/images/per/icon_wodedingdanjiantou.png?lv=91168a2962) no-repeat;
+          width: 0.55rem;
+          height: 0.55rem;
+          float: right;
+          background-size: contain;
+          margin-top: 1rem;
+          margin-right: 0.45rem;
+        }
+        .see-order{
+          float: right;
+          color: #b2b2b2;
+          line-height: 2.5rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    .per-status{
+        width: 100%;
+        @include flexbox();
+        background: #fff;
+        li{
+          width: 25%;
+          padding-top: 0.75rem;
+          text-align: center;
+          padding-bottom: 0.5rem;
+          a{
+            i{
+                width: 1.3rem;
+                height: 1.3rem;
+                display: block;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:.1rem;
+            }
+            .icon-dfk{
+                background: url(http://m.lecuntao.com/resource/images/per/icon_gerenzhongixndaifukuan.png?lv=48763fe68b) no-repeat;
+                background-size: contain;
+            }
+            .icon-dfh{
+                background: url(http://m.lecuntao.com/resource/images/per/icon_gerenzhongxindaihouhuo.png?lv=aa5d07c6ee) no-repeat;
+                background-size: contain;
+            }
+            .icon-dsh{
+                background: url(http://m.lecuntao.com/resource/images/per/icon_gerenzhongxindaishouhuo.png?lv=36b3358854) no-repeat;
+                background-size: contain;
+            }
+            .icon-th{
+                background: url(http://m.lecuntao.com/resource/images/per/icon_gerenzhongxintuihuo.png?lv=10857a8ab1) no-repeat;
+                background-size: contain;
+            }
+            span{
+                font-size: 0.75rem;
+                color: #333;
+                text-align: center;
+            }
+          }
+        }
+    }
+    .take-delivery {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 0.45rem;
+      overflow: hidden;
+      background: #fff;
+      a{
+        .per-l{
+          float: left;
+          .icon-loc{
+            background: url(http://m.lecuntao.com/resource/images/per/icon_gerenzhongxinshouhuodizhi.png?lv=d2d3023641) no-repeat;
+              width: 0.8rem;
+              height: 0.8rem;
+              background-size: contain;
+              display: block;
+              float: left;
+              margin-right: 0.5rem;
+              margin-top: 0.35rem;
+          }
+          .txt-l{
+            font-size: 0.75rem;
+            color: #333;
+            line-height: 1.5rem;
+            float: left;
+          }
+        }
+        .per-r{
+          float: right;
+          .txt-r{
+            font-size: 0.75rem;
+            color: #b2b2b2;
+            line-height: 1.5rem;
+            float: left;
+          }
+          .icon-right{
+            background: url(http://m.lecuntao.com/resource/images/per/icon_wodedingdanjiantou.png?lv=91168a2962) no-repeat;
+            width: 0.55rem;
+            height: 0.55rem;
+            background-size: contain;
+            display: block;
+            float: left;
+            margin-left: 0.5rem;
+            margin-top: 0.45rem;
+          }
+        }
+      }
+    }
+    .per-bot{
+      background: #fff;
+      width: 100%;
+      overflow: hidden;
+      a{
+          padding: 0.5rem 0.45rem;
+          overflow: hidden;
+          background: #fff;
+          display:block;
+          @include border(0 0 1px 0,#ccc)
+          .per-l{
+            float:left;
+            .icon-tel{
+              background: url(http://m.lecuntao.com/resource/images/per/icon_gerenzhongxinlianxidaianhua.png?lv=3eca360974) no-repeat;
+              width: 0.8rem;
+              height: 0.8rem;
+              background-size: contain;
+              display: block;
+              float: left;
+              margin-right: 0.5rem;
+              margin-top: 0.35rem;
+            }
+            .icon-feedback{
+              background: url(http://m.lecuntao.com/resource/images/per/icon_gerenzhongxinyjianfankui.png?lv=297421a35b) no-repeat;
+              width: 0.8rem;
+              height: 0.8rem;
+              background-size: contain;
+              display: block;
+              float: left;
+              margin-right: 0.5rem;
+              margin-top: 0.35rem;
+            }
+            .icon-des{
+              background: url(http://m.lecuntao.com/resource/images/per/icon_gerenhozngxinguanyulecuntao.png?lv=b5a61fea4d) no-repeat;
+              width: 0.8rem;
+              height: 0.8rem;
+              background-size: contain;
+              display: block;
+              float: left;
+              margin-right: 0.5rem;
+              margin-top: 0.35rem;
+            }
+            .txt-l{
+              font-size: 0.75rem;
+              color: #333;
+              line-height: 1.5rem;
+              float: left;
+            }}
+          .per-r{
+            float:right;
+            .txt-r{
+                font-size: 0.75rem;
+                color: #b2b2b2;
+                line-height: 1.5rem;
+                float: left;
+            }
+            .icon-right{
+                background: url(http://m.lecuntao.com/resource/images/per/icon_wodedingdanjiantou.png?lv=91168a2962) no-repeat;
+                width: 0.55rem;
+                height: 0.55rem;
+                background-size: contain;
+                display: block;
+                float: left;
+                margin-left: 0.5rem;
+                margin-top: 0.45rem;
+            }
+          }
+        }
+      }
+    .ft-platforms{
+        width: 100%;
+        height: 3.5rem;
+        background: #fff;
+        .ft-plat-w{
+          width:100%;
+          @include flexbox();
+          li{
+            width: 33.33%;
+            text-align: center;
+            a{
+              display:block;
+              span{
+                img{
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    margin-top: 0.5rem;
+                }
+              }
+              .plat-txt{
+                  display: block;
+                  width: 100%;
+                  text-align: center;
+                  font-size: 0.55rem;
+              }
+            }
+          }
+        }
+    } 
+  }
+  
+  footer {
+    @extend %footer;
+  }
+
+}

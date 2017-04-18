@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include('./header') %>
+    <div class="index">
+      <% if(name){ %>
+      <p> 欢迎你：<%= name %></p>
+      <button onclick="location.href='/comment/list'">评论</button>
+      <button onclick="location.href='/users/logout'">退出</button>
+      <% } else { %>
+      <button onclick="location.href='/registor'">注册</button>
+      <button onclick="location.href='/login'">登录</button>
+      <% } %>
+    </div>
+  </body>
+</html>

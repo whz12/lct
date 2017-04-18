@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.weui-tabbar__item {
+  padding: 0;
+}
+
+.weui-tabbar__icon {
+  width: auto;
+}
+
+.weui-tab__panel {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#photo1 {
+  height: 300px;
+  margin-top: 10px;
+}
+
+#photo1 img {
+  width: 100%;
+}

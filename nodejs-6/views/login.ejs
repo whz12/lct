@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <title>登录</title>
+</head>
+<body>
+  <%- include('./header', {title: '登录'}) %>
+  <form action="/users/login" method="post" class="container">
+    <label for="">
+      用户名：<input type="text" name="username" value="" />
+    </label>
+    <label for="">
+      密码：<input type="password" name="password" value="" />
+    </label>
+    <label for="">
+      <input type="submit" name="submit" value="登录" />
+    </label>
+  </form>
+</body>
+</html>

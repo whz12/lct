@@ -1,0 +1,97 @@
+$base-color: #666;
+
+@font-face {
+  font-family: 'yofont';
+  src: url('/build/images/iconfont/iconfont.woff') format('woff'),
+  url('/build/images/iconfont/iconfont.ttf') format('truetype')
+}
+
+
+
+  %footer{
+    width:100%;
+    height:2.5rem;
+    background:#fff;
+    z-index:10;
+    padding-top:.1rem;
+    ul{
+      width:100%;
+      height:100%;
+      @include flexbox();
+      li{
+        width:25%;
+        height:100%;
+        text-align:center;
+        color:#333;
+        @include flex();
+        i{
+          width: 1.5rem;
+          height: 1.5rem;
+          display: block;
+          margin-left:auto;
+          margin-right:auto;
+        }
+        span{
+          font-size: 0.55rem;
+        }
+      }
+      li.active{
+          span{
+            color:red !important;
+          }
+        }
+      
+      li:nth-of-type(1){
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_normal.png?lv=176f7e83d4)no-repeat center;
+          background-size: contain;
+        }
+        
+      }
+      li:nth-of-type(1).active{
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_selected.png?lv=4c0a3eacb8)no-repeat center;
+          background-size: contain;
+        }
+        
+      }
+      li:nth-of-type(2){
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_feilei_normal.png?lv=619ec70aeb)no-repeat center;
+          background-size: contain;
+        }
+      }
+      li:nth-of-type(2).active{
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_feilei_selected.png?lv=7c9179bc12)no-repeat center;
+          background-size: contain;
+        }
+      }
+      li:nth-of-type(3){
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_gouwuche_normal.png?lv=8b1103605e)no-repeat center;
+          background-size: contain;
+        }
+      }
+      li:nth-of-type(3).active{
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_gouwuche_normal.png?lv=8b1103605e)no-repeat center;
+          background-size: contain;
+        }
+      }
+      li:nth-of-type(4){
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_wode_normal.png?lv=f76b75cd00)no-repeat center;
+          background-size: contain;
+        }
+      }
+      li:nth-of-type(4).active{
+        i{
+          background: url(http://m.lecuntao.com/resource/images/homepage/icon_index_wode_selected.png?lv=261ad098bc)no-repeat center;
+          background-size: contain;
+        }
+      }
+
+    }
+
+  }

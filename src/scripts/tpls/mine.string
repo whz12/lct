@@ -1,0 +1,111 @@
+<div class="m-index">
+	
+	<section>
+		<div class="per-t">
+			<img src="http://m.lecuntao.com/resource/images/per/bg_gerenzhongxinbeijing.png?lv=eedef2e054" alt="">
+			<p><a href="register.html">注册</a><span>/</span><a href="login.html">登录</a></p>
+		</div>
+		<div class="total-order-w">
+			<a href="">
+				<span class="my-order">我的订单</span>
+				<i class="icon-r"></i>
+				<span class="see-order">查看全部订单</span>
+			</a>
+		</div>
+		<ul class="per-status">
+			<li>
+				<a href="">
+					<i class="icon-dfk"></i>
+					<span>待付款</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-dfh"></i>
+					<span>待付款</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-dsh"></i>
+					<span>待收货</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="icon-th"></i>
+					<span>退货/售后</span>
+				</a>
+			</li>
+		</ul>
+		<div class="take-delivery pad">
+          <a href="/tpl/member/address.html">
+            <span class="per-l">
+              <i class="icon-loc"></i>
+              <span class="txt-l">收货地址</span>
+            </span>
+            <span class="per-r">
+              <span class="txt-r">管理地址信息</span>
+              <i class="icon-right"></i>
+            </span>
+          </a>
+        </div>
+        <div class="per-bot" >
+            <a href="javascript:;" class="per-line pad" id="per-tel">
+                <span class="per-l">
+                  <i class="icon-tel"></i>
+                  <span class="txt-l">联系电话</span>
+                </span>
+                <span class="per-r">
+                  <span class="txt-r">400-088-8888</span>
+                  <i class="icon-right"></i>
+                </span>
+            </a>
+           <a href="/tpl/member/feedback.html" class="per-line pad" >
+	            <span class="per-l">
+	              <i class="icon-feedback"></i>
+	              <span class="txt-l">意见反馈</span>
+	            </span>
+          </a>
+           <a href="javascript:;" class="pad per-line" id='about_use'>
+            <span class="per-l">
+              <i class="icon-des"></i>
+              <span class="txt-l">关于乐村淘</span>
+            </span>
+          </a>
+        </div>
+        <div class="ft-platforms">
+	        <ul class="ft-plat-w">
+	          <li >
+	            <a href="javascript:;" class="button-khd">
+	              <span>
+	                <img src="http://m.lecuntao.com/resource/images/img_kehuduan.png?lv=429d45be11">
+	              </span>
+	              <span class="plat-txt">客户端</span>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="javascript:;" id="local_pc">
+	              <span>
+	                <img src="http://m.lecuntao.com/resource/images/img_diannaoban.png?lv=f548be1565">
+	              </span>
+	              <span class="plat-txt">电脑版</span>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="javascript:;" id="local_home">
+	              <span>
+	                <img src="http://m.lecuntao.com/resource/images/img_guanwang.png?lv=df748939c3">
+	              </span>
+	              <span class="plat-txt">乐村淘官网</span>
+	            </a>
+	          </li>
+	        </ul>
+      	</div>
+	</section>
+
+	<footer id = "mine-footer">
+	   
+	</footer>
+
+</div>

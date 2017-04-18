@@ -1,0 +1,99 @@
+.m-index {
+  width:100%;
+  margin: 0 auto;
+  max-width: 720px;
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  section{
+    @include flex();
+    @include flexbox();
+    @include flex-direction(column)
+    width:100%;
+    background-color:#fff;
+    .ss_bar_w{
+        background-color: #fff;
+        width: 100%;
+        height: 3rem;
+        z-index: 10;
+        padding-left: 5%;
+        height: 3rem;
+        @include border(0 0 1px 0,#ccc)
+        .ss_input{
+            width: 85%;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            background-color: #f2f2f2;
+            border-radius: 0.75rem;
+            font-size: 0.75rem;
+            vertical-align: top;
+            border: none;
+            padding-left: 5%;
+            margin-left: 5%;
+            margin-top: 0.75rem;
+            float: left;
+        }
+    }
+    main{
+      width:100%;
+      @include flexbox()
+      .left_menu{
+        width:24%;
+        .province{
+            width: 100%;
+            background-color: #f0f0f0;
+            li{
+                height: 2.25rem;
+                line-height: 2.25rem;
+                font-size: 0.75rem;
+                text-align: center;
+                color: #4c4c4c;
+                &.active{
+                  background-color:#fff;
+                  
+                  a{
+                    color:red;
+                  }
+                }
+            }
+
+        }
+      }
+      .right_menu{
+        width:76%;
+        ul{
+          width:100%;
+          display:none;
+          &.active{
+            display:block;
+          }
+          li{
+            float:left;
+            width:33.33%;
+            font-size: 0.65rem;
+            text-align: center;
+            img{
+              width:100%;
+              height:auto;
+            }
+            p{
+              line-height: 2rem;
+              height: 2rem;
+              color: #4c4c4c;
+              a{
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+  footer {
+    @include border(1px 0 0 0,#ccc)
+    @extend %footer;
+  }
+
+}

@@ -1,0 +1,113 @@
+.m-index {
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  .wrap{
+    background: #f0f0f0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 720px;
+    header{
+      width: 100%;
+      height: 3.15rem;
+      position: relative;
+      .icon-close{
+        background: url(http://m.lecuntao.com/resource/images/login/close.png?lv=c5dce8706a) no-repeat;
+        width: 1rem;
+        height: 1rem;
+        background-size: 100%;
+        position: absolute;
+        left: 0.45rem;
+        top: 0.7rem;
+      }
+      .l-txt{
+        color: #333;
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 2.4rem;
+        font-weight:300;
+      }
+    }
+    .login-form{
+      padding: 0 0.45rem;
+      overflow: hidden;
+      .login-txt{
+        width: 100%;
+        height: 2rem;
+        font-size: 0.7rem;
+        border-radius: 0.2rem;
+        margin-bottom: 0.75rem;
+        overflow: hidden;
+        border:0.05rem solid #f81234;
+        line-height: 2rem;
+        a{
+          width: 50%;
+          text-align: center;
+          float: left;
+          color: #333;
+        }
+        .l-cur{
+          background: #f81234;
+          color: #fff;
+          height: 100%;
+        }
+      }
+      .login-con{
+        
+        .f-wrap{
+          border-radius: 0.2rem;
+          background: #fff;
+          height: 5rem;
+          input{
+            height: 2.5rem;
+            display: block;
+            font-size: 0.75rem;
+            width: 82%;
+            border:0;
+            background: url(http://m.lecuntao.com/resource/images/login/icon_login.png?lv=0604d8cffe) no-repeat 0.5rem;
+            padding-left: 2rem;
+            background-size: 1.2rem;
+          }
+          
+          .l-line{
+            width: 94%;
+            margin-left: 3%;
+            height: 0.05rem;
+            background: #ccc;
+            display: block;
+
+          }
+          .pwd{
+            background: url(http://m.lecuntao.com/resource/images/login/icon_lock.png?lv=3f0f2d60c4) no-repeat 0.5rem;
+            padding-left: 2rem;
+            background-size: 1.2rem;
+          }
+        }
+        .btn-login{
+          width: 100%;
+          color: #fff;
+          background: #f81234;
+          height: 2.25rem;
+          font-size: 0.8rem;
+          text-align: center;
+          line-height: 2.25rem;
+          margin-top: 1.25rem;
+          display: block;
+          border-radius: 0.2rem;
+        }
+        .btn-password{
+          width: 100%;
+          color: #808080;
+          background: #fff;
+          height: 2.25rem;
+          font-size: 0.8rem;
+          text-align: center;
+          line-height: 2.25rem;
+          margin-top: 0.5rem;
+          display: block;
+          border-radius: 0.2rem;   
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+<div class="m-index">
+  <header>
+    <div class="sel_city">
+      <span>北京市</span>
+      <i class="sel_city_icon"></i>
+    </div>
+    <div class="search_wrap">
+      <a href="#javascript" class="search_btn"></a>
+      <input class="search_inp" type="text" placeholder="搜索你需要的商品">
+    </div>
+  </header>
+  <section class="hot-vscroll">
+    <main>
+      <div class="swiper-container" id="hot-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="http://img.lecuntao.com/data/upload/mobile/app_slider/webFocus-140-1490686820.jpg?722" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="http://img.lecuntao.com/data/upload/mobile/app_slider/webFocus-140-1489628827.jpg?857" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="http://img.lecuntao.com/data/upload/mobile/app_slider/webFocus-140-1488165772.jpg?122" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="http://img.lecuntao.com/data/upload/mobile/app_slider/webFocus-140-1490779924.jpg?903" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="http://img.lecuntao.com/data/upload/mobile/app_slider/webFocus-140-1490577113.jpg?898" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="http://img.lecuntao.com/data/upload/mobile/app_slider/webFocus-140-1491444877.jpg?119" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="http://img.lecuntao.com/data/upload/mobile/app_slider/webFocus-140-1490321050.jpg?902" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      <div class="cont_b">
+        <ul class="cont-bg">
+          <li><a href=""><span><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/leliuji@3x.png?date=20170408" alt=""></span><p>乐6集</p></a>
+          </li>
+          <li><a href=""><span><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/teseguan@3x.png?date=20170408" alt=""></span><p>特色馆</p></a></li>
+          <li><a href=""><span><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/lexianyu@3x.png?date=20170408" alt=""></span><p>乐县域</p></a></li>
+          <li><a href=""><span><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/legongyi@3x.png?date=20170408" alt=""></span><p>乐公益</p></a></li>
+        </ul>
+        <ul class="cont-nav">
+          <li><i><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/liangyou@60.png" alt=""></i><span>米面油</span></li>
+          <li><i><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/dianqi@60.png" alt=""></i><span>电器城</span></li>
+          <li><i><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/fuzhuang@60.png" alt=""></i><span>服装城</span></li>
+          <li><i><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/shipin@60.png" alt=""></i><span>美食汇</span></li>
+          <li><i><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/rihua@60.png" alt=""></i><span>日用馆</span></li>
+          <li><i><img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/nongzi@60.png" alt=""></i><span>农资圈</span></li>
+        </ul>
+      </div>
+      <div class="cont_llj">
+        <img src="http://m.lecuntao.com/resource/images/homepage/tittle_leliuji.png?lv=fe421b845b" alt="">
+        <img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/le6ji_banner_316.png?date=20170410" alt="">
+        <div class="hot_hscroll" id = 'list'>
+            <script id="indexList" type="text/html">
+                <ul>
+                {{each recommend_goods as value i}}
+                  <li>
+                    <a href="">
+                      <img src="{{value.goods_image}}" alt="">
+                      <span>{{value.goods_name}}</span>
+                    </a>
+                    <div>
+                      <i>￥</i>
+                      <b>{{value.goods_price}}</b>
+                    </div>
+                  </li>
+                {{/each}}
+                </ul>
+            </script>
+        </div>
+      </div>
+      <div class="cont_teseguan">
+        <img src="http://m.lecuntao.com/resource/images/homepage/tittle_teseguan.png?lv=0e04dc418e" alt="">
+        <img src="http://s0.lecuntao.com/mobile_2.1.0/resource/images/index/teseguan_banner.png?date=20170411" alt="">
+        <div class="hot_hscroll hot_hscroll1" id = 'list1'>
+            <script id="indexList1" type="text/html">
+                <ul>
+                {{each recommend_goods as value i}}
+                  <li>
+                    <a href="">
+                      <img src="{{value.goods_image}}" alt="">
+                      <span>{{value.goods_name}}</span>
+                    </a>
+                    <div>
+                      <i>￥</i>
+                      <b>{{value.goods_price}}</b>
+                    </div>
+                  </li>
+                {{/each}}
+                </ul>
+            </script>
+        </div>
+      </div>
+    </main>
+  </section>
+  <footer id = "index-footer">
+   
+  </footer>
+
+</div>

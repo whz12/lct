@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/* reset */
+
+html, body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fafafa;
+    color: #212121;
+    /* 以640*1136分辨率来适配，以100px作为root的font-size参照系：1vw=3.2px */
+    /*font-size: 31.25vw;*/
+}
+
+body {
+    margin: 0;
+    font-size: 0.14rem;
+    line-height: 1.5;
+    font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+}
+
+ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, figure, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, pre, xmp {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+address, cite, dfn, em, i, optgroup, var {
+    font-style: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url("../images/iconfont/iconfont.woff") format("woff"), url("../images/iconfont/iconfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url("../images/iconfont/iconfont-menu.woff") format("woff"), url("../images/iconfont/iconfont-menu.ttf") format("truetype");
+}
+
+.iconfont {
+    font-family: iconfont;
+}
+
+
+/* index styles */
+
+.m-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-container header {
+    height: .44rem;
+    background: #0dc441;
+}
+
+.m-container header ul {
+    height: 100%;
+    display: flex;
+}
+
+.m-container header ul li:first-child, .m-container header ul li:last-child {
+    height: 100%;
+    width: .44rem;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .24rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.m-container header ul li:nth-child(2) {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-container header ul li:nth-child(2) span {
+    height: .25rem;
+    width: .59rem;
+    font-size: .12rem;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(10, 217, 133, 0.5);
+    line-height: .25rem;
+    text-align: center;
+}
+
+.m-container header ul li:nth-child(2) span:first-child {
+    border-radius: .10rem 0 0 .10rem;
+}
+
+.m-container header ul li:nth-child(2) span:last-child {
+    border-radius: 0 .10rem .10rem 0;
+}
+
+.m-container header ul li:nth-child(2) span.active {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(10, 217, 133, 1);
+}
+
+.m-container nav {
+    height: .35rem;
+    background: #fff;
+}
+
+.m-container nav ul {
+    height: 100%;
+    display: flex;
+}
+
+.m-container nav ul li {
+    flex: 1;
+    line-height: .35rem;
+    text-align: center;
+    border-bottom: solid 1px #d9d9d9;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    .m-container nav ul li {
+        border-bottom: solid 0.5px #ced6cf;
+    }
+    .m-container footer ul {
+        border-top: solid 0.5px #ced6cf;
+    }
+    .m-container footer ul li:nth-child(3) i {
+      border: solid 0.5px #ced6cf;
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5) {
+    .m-container nav ul li{
+        border-bottom: solid 0.333333px #ced6cf;
+    }
+    .m-container footer ul {
+        border-top: solid 0.333333px #ced6cf;
+    }
+    .m-container footer ul li:nth-child(3) i {
+        border: solid 0.333333px #ced6cf;
+    }
+}
+
+.m-container nav ul li.active {
+    border-bottom: solid .02rem #0dc441;
+    color: #0dc441;
+}
+
+.m-container section {
+    flex: 1;
+    overflow-y: scroll;
+    padding-bottom: .04rem;
+    background-color: #fff;
+}
+
+.m-container section ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.m-container section ul li {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: .04rem;
+    padding: 0 .04rem;
+}
+
+@media screen and (max-width:321px) {
+    .m-container section ul li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:400px) {
+    .m-container section ul li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .m-container section ul li {
+        font-size: 18px;
+    }
+}
+
+.m-container section ul li img {
+    width: 100%;
+}
+
+.m-container section ul li:nth-child(odd) {
+    padding-right: .02rem;
+}
+
+.m-container section ul li:nth-child(even) {
+    padding-left: .02rem;
+}
+
+.m-container section ul li b {
+    font-style: normal;
+    /*width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;*/
+}
+
+.m-container footer {
+    height: .44rem;
+    background: #fff;
+}
+
+.m-container footer ul {
+    height: 100%;
+    display: flex;
+}
+
+.m-container footer ul li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d6d6d6;
+}
+
+.m-container footer ul li:nth-child(3) {
+    position: relative;
+}
+
+.m-container footer ul li:nth-child(3) i {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -0.06rem;
+    width: .50rem;
+    height: .50rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 1px #ced6cf;
+    text-align: center;
+    line-height: .48rem;
+    font-size: .34rem;
+}
+
+.m-container footer ul li i {
+    font-size: .24rem;
+    line-height: .24rem;
+}
+
+.m-container footer ul li b {
+    font-size: .12rem;
+    line-height: .12rem;
+}
+
+.m-container footer ul li.active i,
+.m-container footer ul li.active b {
+  color: #0dc441;
+  font-weight: normal;
+}
+
+
+/* end */

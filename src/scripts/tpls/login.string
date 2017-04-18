@@ -1,0 +1,25 @@
+<div class="m-index">
+    <div class="wrap">  
+        <header>
+          <span class="icon-close" onclick="icon_ret()"></span>
+          <h2 class="l-txt">登录</h2>
+        </header>
+        <div class="login-form">
+          <div class="login-txt">
+            <a href="javascript:;" class="l-cur">乐村淘账户登录</a>
+            <a href="./register.html">免费注册</a>
+          </div>
+          <div class="login-con">
+            <form class="form-cur" id="logInFrom">
+              <div class="f-wrap">
+                <input type="text" placeholder="输入手机号/用户名" class="username" name="username" id="username" autocomplete="off"/>
+                <em class="l-line"></em>
+                      <input type="password" placeholder="请输入密码" class="pwd" name="password" id="userpwd" autocomplete="off"/>
+              </div>
+                    <a href="javascript:;" class="btn-login" id="loginBtn">登录</a>
+                    <a href="./retphone.html" class="btn-password">找回密码</a>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
